@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B0505065A3444E2BF50B77C /* Pods_MyAliyunOSSDemoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD0A743FF20F87E69042AB4 /* Pods_MyAliyunOSSDemoSwift.framework */; };
+		841BC8921FCFA79F007352CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841BC8911FCFA79F007352CF /* AppDelegate.swift */; };
+		841BC8941FCFA79F007352CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841BC8931FCFA79F007352CF /* ViewController.swift */; };
+		841BC8971FCFA79F007352CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841BC8951FCFA79F007352CF /* Main.storyboard */; };
+		841BC8991FCFA79F007352CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841BC8981FCFA79F007352CF /* Assets.xcassets */; };
+		841BC89C1FCFA79F007352CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841BC89A1FCFA79F007352CF /* LaunchScreen.storyboard */; };
+		841BC8A41FCFABFF007352CF /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 841BC8A31FCFABFF007352CF /* libresolv.tbd */; };
+		848C2A051FCFFCD1005AA983 /* Base64Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 848C2A021FCFFCD1005AA983 /* Base64Safe.m */; };
+		848C2A081FCFFEAF005AA983 /* OSSConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 848C2A071FCFFEAF005AA983 /* OSSConstants.m */; };
+		848C2A0A1FCFFF34005AA983 /* MyOssService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848C2A091FCFFF34005AA983 /* MyOssService.swift */; };
+		848C2A0C1FD00F3E005AA983 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848C2A0B1FD00F3E005AA983 /* ImageService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4DD0A743FF20F87E69042AB4 /* Pods_MyAliyunOSSDemoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyAliyunOSSDemoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DDD2A3F85CE795316DF33AE /* Pods-MyAliyunOSSDemoSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyAliyunOSSDemoSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyAliyunOSSDemoSwift/Pods-MyAliyunOSSDemoSwift.release.xcconfig"; sourceTree = "<group>"; };
+		841BC88E1FCFA79F007352CF /* MyAliyunOSSDemoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAliyunOSSDemoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		841BC8911FCFA79F007352CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		841BC8931FCFA79F007352CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		841BC8961FCFA79F007352CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		841BC8981FCFA79F007352CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		841BC89B1FCFA79F007352CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		841BC89D1FCFA79F007352CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		841BC8A31FCFABFF007352CF /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		841BC8A51FCFAC06007352CF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		841BC8A81FCFB123007352CF /* MyAliyunOSSDemoSwift-OC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyAliyunOSSDemoSwift-OC-Bridging-Header.h"; sourceTree = "<group>"; };
+		848C2A011FCFFCD1005AA983 /* Base64Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Safe.h; sourceTree = "<group>"; };
+		848C2A021FCFFCD1005AA983 /* Base64Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64Safe.m; sourceTree = "<group>"; };
+		848C2A061FCFFEAF005AA983 /* OSSConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSConstants.h; sourceTree = "<group>"; };
+		848C2A071FCFFEAF005AA983 /* OSSConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSSConstants.m; sourceTree = "<group>"; };
+		848C2A091FCFFF34005AA983 /* MyOssService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOssService.swift; sourceTree = "<group>"; };
+		848C2A0B1FD00F3E005AA983 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		F328944E2821552943C35F72 /* Pods-MyAliyunOSSDemoSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyAliyunOSSDemoSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyAliyunOSSDemoSwift/Pods-MyAliyunOSSDemoSwift.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		841BC88B1FCFA79F007352CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B0505065A3444E2BF50B77C /* Pods_MyAliyunOSSDemoSwift.framework in Frameworks */,
+				841BC8A41FCFABFF007352CF /* libresolv.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05D300CE5351875D7B8E1ECA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				841BC8A51FCFAC06007352CF /* SystemConfiguration.framework */,
+				841BC8A31FCFABFF007352CF /* libresolv.tbd */,
+				4DD0A743FF20F87E69042AB4 /* Pods_MyAliyunOSSDemoSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B923AC3CBD32029D5C26D43 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F328944E2821552943C35F72 /* Pods-MyAliyunOSSDemoSwift.debug.xcconfig */,
+				5DDD2A3F85CE795316DF33AE /* Pods-MyAliyunOSSDemoSwift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		841BC8851FCFA79F007352CF = {
+			isa = PBXGroup;
+			children = (
+				841BC8901FCFA79F007352CF /* MyAliyunOSSDemoSwift */,
+				841BC88F1FCFA79F007352CF /* Products */,
+				6B923AC3CBD32029D5C26D43 /* Pods */,
+				05D300CE5351875D7B8E1ECA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		841BC88F1FCFA79F007352CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				841BC88E1FCFA79F007352CF /* MyAliyunOSSDemoSwift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		841BC8901FCFA79F007352CF /* MyAliyunOSSDemoSwift */ = {
+			isa = PBXGroup;
+			children = (
+				841BC8AC1FCFF513007352CF /* Services */,
+				841BC8911FCFA79F007352CF /* AppDelegate.swift */,
+				848C2A061FCFFEAF005AA983 /* OSSConstants.h */,
+				848C2A071FCFFEAF005AA983 /* OSSConstants.m */,
+				841BC8931FCFA79F007352CF /* ViewController.swift */,
+				841BC8951FCFA79F007352CF /* Main.storyboard */,
+				841BC8981FCFA79F007352CF /* Assets.xcassets */,
+				841BC89A1FCFA79F007352CF /* LaunchScreen.storyboard */,
+				841BC89D1FCFA79F007352CF /* Info.plist */,
+				841BC8A81FCFB123007352CF /* MyAliyunOSSDemoSwift-OC-Bridging-Header.h */,
+			);
+			path = MyAliyunOSSDemoSwift;
+			sourceTree = "<group>";
+		};
+		841BC8AC1FCFF513007352CF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				848C2A011FCFFCD1005AA983 /* Base64Safe.h */,
+				848C2A021FCFFCD1005AA983 /* Base64Safe.m */,
+				848C2A091FCFFF34005AA983 /* MyOssService.swift */,
+				848C2A0B1FD00F3E005AA983 /* ImageService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		841BC88D1FCFA79F007352CF /* MyAliyunOSSDemoSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 841BC8A01FCFA79F007352CF /* Build configuration list for PBXNativeTarget "MyAliyunOSSDemoSwift" */;
+			buildPhases = (
+				C05A38D5719525C86654E776 /* [CP] Check Pods Manifest.lock */,
+				841BC88A1FCFA79F007352CF /* Sources */,
+				841BC88B1FCFA79F007352CF /* Frameworks */,
+				841BC88C1FCFA79F007352CF /* Resources */,
+				C261093DE39FAC8DA213D98A /* [CP] Embed Pods Frameworks */,
+				EF4F26641B2F925981B9EE71 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyAliyunOSSDemoSwift;
+			productName = MyAliyunOSSDemoSwift;
+			productReference = 841BC88E1FCFA79F007352CF /* MyAliyunOSSDemoSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		841BC8861FCFA79F007352CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = Crack;
+				TargetAttributes = {
+					841BC88D1FCFA79F007352CF = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 841BC8891FCFA79F007352CF /* Build configuration list for PBXProject "MyAliyunOSSDemoSwift" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 841BC8851FCFA79F007352CF;
+			productRefGroup = 841BC88F1FCFA79F007352CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				841BC88D1FCFA79F007352CF /* MyAliyunOSSDemoSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		841BC88C1FCFA79F007352CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				841BC89C1FCFA79F007352CF /* LaunchScreen.storyboard in Resources */,
+				841BC8991FCFA79F007352CF /* Assets.xcassets in Resources */,
+				841BC8971FCFA79F007352CF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C05A38D5719525C86654E776 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyAliyunOSSDemoSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C261093DE39FAC8DA213D98A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyAliyunOSSDemoSwift/Pods-MyAliyunOSSDemoSwift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AliyunOSSiOS/AliyunOSSiOS.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AliyunOSSiOS.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyAliyunOSSDemoSwift/Pods-MyAliyunOSSDemoSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF4F26641B2F925981B9EE71 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyAliyunOSSDemoSwift/Pods-MyAliyunOSSDemoSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		841BC88A1FCFA79F007352CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				841BC8941FCFA79F007352CF /* ViewController.swift in Sources */,
+				848C2A0A1FCFFF34005AA983 /* MyOssService.swift in Sources */,
+				841BC8921FCFA79F007352CF /* AppDelegate.swift in Sources */,
+				848C2A051FCFFCD1005AA983 /* Base64Safe.m in Sources */,
+				848C2A081FCFFEAF005AA983 /* OSSConstants.m in Sources */,
+				848C2A0C1FD00F3E005AA983 /* ImageService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		841BC8951FCFA79F007352CF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				841BC8961FCFA79F007352CF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		841BC89A1FCFA79F007352CF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				841BC89B1FCFA79F007352CF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		841BC89E1FCFA79F007352CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		841BC89F1FCFA79F007352CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		841BC8A11FCFA79F007352CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F328944E2821552943C35F72 /* Pods-MyAliyunOSSDemoSwift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = MyAliyunOSSDemoSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pyw.MyAliyunOSSDemoSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyAliyunOSSDemoSwift/MyAliyunOSSDemoSwift-OC-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+			};
+			name = Debug;
+		};
+		841BC8A21FCFA79F007352CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DDD2A3F85CE795316DF33AE /* Pods-MyAliyunOSSDemoSwift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = MyAliyunOSSDemoSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pyw.MyAliyunOSSDemoSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyAliyunOSSDemoSwift/MyAliyunOSSDemoSwift-OC-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		841BC8891FCFA79F007352CF /* Build configuration list for PBXProject "MyAliyunOSSDemoSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				841BC89E1FCFA79F007352CF /* Debug */,
+				841BC89F1FCFA79F007352CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		841BC8A01FCFA79F007352CF /* Build configuration list for PBXNativeTarget "MyAliyunOSSDemoSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				841BC8A11FCFA79F007352CF /* Debug */,
+				841BC8A21FCFA79F007352CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 841BC8861FCFA79F007352CF /* Project object */;
+}
