@@ -8,11 +8,11 @@
 
 #import "OSSConstants.h"
 
-NSString * const BUCKET_NAME        = @"dtbnews";
-NSString * const endPoint           = @"http://oss-cn-shanghai.aliyuncs.com";
-NSString * const imageEndPoint      = @"http://img-cn-shanghai.aliyuncs.com";
-NSString * const accessKeyID        = @"5Ml1pqrg9s9Z8lbI";
-NSString * const accessKeySecret    = @"EeAjwQfyOiejZp8NKtTdcuepC3RWTR";
+NSString * const BUCKET_NAME        = @"demo";
+NSString * const endPoint           = @"http://oss-cn-demo.aliyuncs.com";
+NSString * const imageEndPoint      = @"http://img-cn-demo.aliyuncs.com";
+NSString * const accessKeyID        = @"demo";
+NSString * const accessKeySecret    = @"demo";
 //NSString * const UPLOAD_OBJECT_KEY = @"upload_object_key";
 //NSString * const DOWNLOAD_OBJECT_KEY = @"download_object_key";
 //NSString * const callbackAddress = @"http://oss-demo.aliyuncs.com:23450";
